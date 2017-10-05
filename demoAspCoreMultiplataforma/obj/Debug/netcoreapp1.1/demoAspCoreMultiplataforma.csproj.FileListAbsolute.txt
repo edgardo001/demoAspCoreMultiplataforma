@@ -1,0 +1,9 @@
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\bin\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.deps.json
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\bin\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.runtimeconfig.json
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\bin\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.runtimeconfig.dev.json
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\bin\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.dll
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\obj\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.csprojResolveAssemblyReference.cache
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\obj\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.AssemblyInfo.cs
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\bin\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.pdb
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\obj\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.dll
+c:\users\datasoft-edgardo\documents\visual studio 2017\Projects\demoAspCoreMultiplataforma\demoAspCoreMultiplataforma\obj\Debug\netcoreapp1.1\demoAspCoreMultiplataforma.pdb

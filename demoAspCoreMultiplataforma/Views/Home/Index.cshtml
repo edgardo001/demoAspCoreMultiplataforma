@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <button id="btnTest">Test</button>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    //Metodos Jquery
+    $(document).ready(function () {
+        $("#btnTest").click(function () {
+            //var data = { 'valor1': $("#txtUsuario").val().trim(), 'valor2': $("#txtPassword").val().trim() };
+            var data = { 'valor1': "mi valor 1", 'valor2': "mi valor 2" };
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                //Funcional
+                url: "../api/demo",
+                data: JSON.stringify(data),
+                //Formato en que volvera la peticion
+                dataType: "json",
+                beforeSend: function () {
+                },
+                //En el caso de funcionar, entra en este lugar
+                success: function (retorno) {
+                    alert(retorno.valor1);
+                    alert(retorno.valor2);
+                },
+                timeout: 5000,
+                error: function (jqXHR, textStatus, errorThrown) {
+                    errorsAJAX(jqXHR, textStatus, errorThrown);
+                },
+            }).always(function () {
+
+            });
+            //Detiene la redireccion de Buttom
+            return false;
+        });
+
+
+
+        //******************************************************
+        //******************************************************
+        //******************************************************
+
+        //Funcion que encapsula los posibles errores de AJAX
+        function errorsAJAX(jqXHR, textStatus, errorThrown) {
+            if (jqXHR.status === 0) { toastr.error('No conectado : Verificar Red: ' + textStatus); }
+            else if (jqXHR.status == 401) { toastr.error('No se encuentra autorizado para consumir este servicio [401]'); }
+            else if (jqXHR.status == 404) { toastr.error('Pagina solicitada no se encuentra [404]'); }
+            else if (jqXHR.status == 500) { toastr.error('Internal Server Error [500].'); }
+            else if (textStatus === 'parsererror') { toastr.error('Requested JSON parse failed.'); }
+            else if (textStatus === 'timeout') { toastr.error('Time out error.'); }
+            else if (textStatus === 'abort') { toastr.error('Ajax request aborted.'); }
+            else { toastr.error('Uncaught Error: ' + errorThrown); console.log(jqXHR); console.log(textStatus); console.log(errorThrown); }
+        }
+    });
+//Fin Metodos Jquery
+</script>
